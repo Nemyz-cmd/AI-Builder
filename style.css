@@ -122,3 +122,7 @@ button {
 .contact-form-container button[type="submit"]:hover {
     background-color: #45a049;
 }
+
+#disqus_thread {
+    margin-top: 40px;
+}
