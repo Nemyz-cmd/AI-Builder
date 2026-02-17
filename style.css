@@ -13,6 +13,23 @@ body {
     color: #f0f0f0;
 }
 
+.dark-mode .contact-form-container {
+    background-color: #555;
+}
+
+.dark-mode .contact-form-container label,
+.dark-mode .contact-form-container input,
+.dark-mode .contact-form-container textarea {
+    color: #f0f0f0;
+}
+
+.dark-mode .contact-form-container input,
+.dark-mode .contact-form-container textarea {
+    background-color: #777;
+    border-color: #999;
+}
+
+
 .container {
     text-align: center;
 }
@@ -45,4 +62,63 @@ button {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+}
+
+.contact-form-container {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form-container input[type="email"]:focus,
+.contact-form-container textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.contact-form-container button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container button[type="submit"]:hover {
+    background-color: #45a049;
 }
