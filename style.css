@@ -5,10 +5,20 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
 }
 
 .container {
     text-align: center;
+}
+
+.theme-switcher {
+    margin-bottom: 20px;
 }
 
 button {

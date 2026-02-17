@@ -15,3 +15,15 @@ generateBtn.addEventListener('click', () => {
         numbersContainer.appendChild(circle);
     }
 });
+
+const themeSwitch = document.getElementById('theme-switch');
+const themeLabel = document.querySelector('label[for="theme-switch"]');
+
+themeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        themeLabel.textContent = '라이트 모드로 전환';
+    } else {
+        themeLabel.textContent = '다크 모드로 전환';
+    }
+});
