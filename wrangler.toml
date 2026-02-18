@@ -1,0 +1,7 @@
+name = "aibuilding-static-site"
+main = "index.html"
+compatibility_date = "2023-01-01"
+
+[pages]
+dir = "./"
+pages_build_output_dir = "./"
